@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosis amb SVG</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    
+    <header class="container">
+        <h1> STREET FIGHTER: SVG VS Mapa Bits </h1>
+    </header>
+
+    <!--NOTA: Els colors son de : https://library.4d-japan.com/doc/4Dv19/4D/19/Colores-SVG-Nombres.302-5462096.es.html  -->
+
+    <main class="container">
+
+    <section>
+      <h2> 1st Round: SVG</h2>
+
+      <div class="grid">
+
+        <!-- CASETA-->
+        <article class="card">
+
+          <h3>CASA PIN Y PON</h3>
+          
+          <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+            
+            <!-- Cel -->
+            <rect x="0" y="0" width="300" height="300" fill="skyblue" />
+            
+            <!-- Solete -->
+            <circle cx="40" cy="40" r="22" fill="gold" />
+            <!--cx="40" = centre de la circumferència a 40-->
+            <!--cy="40" = centre de la circumferència a 40-->
+            <!--r="20" = radi de la circumferència-->
+            
+            <!-- Gespa-->
+            <rect x="0" y="200" width="300" height="100" fill="lightgreen" />
+            <!--x="0" =comença a l’esquerra--> 
+            <!--y="200" = baixa fins al final del dibuix-->
+            <!--width="300" = ocupa tot l’ample--> 
+            <!--height="100" = fa una franja de terra-->
+            
+            
+            <!-- Cos de la casa -->
+
+            <!-- Rectangle-->
+            <rect x="55" y="110" width="180" height="130" fill="darksalmon" />
+            <!-- x="55" = posició horitzontal del cos de la casa -->
+            <!-- y="110" = posició vertical del cos de la casa -->
+            <!-- width="180" = amplada del cos de la casa -->
+            <!-- height="130" = alçada del cos de la casa -->
+
+            <!-- Teulada de la casa -->
+            <polygon points="55,110 145,30 235,110" fill="peru" />
+            <!-- point "55,110" = cantonada esquerra  -->
+            <!-- point "145,30" = punt superior més alt  -->
+            <!-- point "235,110" = cantonada dreta  -->
+             
+            
+            <!--Aquí la porta-->
+            <rect x="130" y="180" width="43" height="60" fill="saddlebrown" />
+            
+            <!--Ara el pom, que sino no podem entrar a casa xD-->
+            <circle cx="136" cy="210" r="3" fill="gold" />
+            
+            
+            <!--Les finestres -->
+            <!-- Finestra esquerra -->
+            <rect x="70" y="137" width="36" height="35" fill="whitesmoke" />
+            
+            <!-- Finestra dreta -->
+            <rect x="184" y="137" width="36" height="35" fill="whitesmoke" />
+            
+
+          </svg>
+
+        </article>
+
+        <!-- COTXE-->
+        <article class="card">
+
+          <h3>KITT EL COCHE FANTÁSTICO</h3>
+        
+            <svg class="svgBox" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                
+                <!-- Fons gris clar -->
+                <rect x="0" y="0" width="300" height="300" fill="gainsboro" />
+
+                <!-- Cos-->
+                <rect x="40" y="140" width="220" height="60" fill="red" />
+
+                <!--Sostre-->
+                <rect x="90" y="92" width="120" height="48" fill="red" />
+
+                <!--Finestres-->
+                <!--Finestra Esquerra -->
+                <rect x="105" y="100" width="45" height="30" fill="skyblue" />
+
+                <!--Finestra Dreta -->
+                <rect x="158" y="100" width="36" height="30" fill="skyblue" />
+
+                <!--Rodes-->
+                <!--Roda Esquerre-->
+                <circle cx="95" cy="200" r="30" fill="black" />
+
+                <!--Roda Dreta-->
+                <circle cx="210" cy="200" r="30" fill="black" />
+
+                <!--Llanda Esquerre-->
+                <circle cx="95" cy="200" r="16" fill="gray" />
+
+                <!--Llanda Dreta-->
+                <circle cx="210" cy="200" r="16" fill="gray" />
+
+                <!--Llums-->
+                <!--Llum Esquerre-->
+                <rect x="40" y="155" width="15" height="16" fill="yellow" />
+
+                <!--Llum Dreta-->
+                <rect x="245" y="155" width="15" height="16" fill="yellow" />
+            
+            </svg>
+        </article>
+      
+
+        <!-- ROBOT (SVG) -->
+        <article class="card">
+          <h3>WALL-E</h3>
+
+          <svg class="svgBox" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+
+            <!--Fons robot-->
+            <rect x="0" y="0" width="300" height="300" fill="#f5f5f5" />
+
+            <!--Cos-->
+
+            <!--Cap-->
+            <rect x="90" y="60" width="120" height="85" rx="15" ry="15" fill="darkgray" />
+            <!-- rx="15" = arrodoneix cantonades (horitzontal) -->
+            <!-- ry="15" = arrodoneix cantonades (vertical) -->
+            
+            <!--Ulls-->
+            <!--Esquerre-->
+            <circle cx="125" cy="95" r="16" fill="lime" />
+
+            <!--Dret-->
+            <circle cx="175" cy="95" r="16" fill="lime" />
+
+            <!--Interior ull esquerre-->
+            <circle cx="125" cy="95" r="8" fill="white" />
+
+            <!--Interior ull dret-->
+            <circle cx="175" cy="95" r="8" fill="white" />
+
+            <!--Antena-->
+            <line x1="150" y1="25" x2="150" y2="60" stroke="darkgray" stroke-width="6" />
+            <!-- x1="150" = centre horitzontal -->
+            <!-- y1="25" = punt superior -->
+            <!-- y2="60" = connecta amb el cap -->
+            
+            <!-- Punta de l'antena -->
+            <circle cx="150" cy="25" r="7" fill="red" />
+
+            <!--Cos principal-->
+            <rect x="105" y="165" width="90" height="110" fill="darkgray" />
+
+            <!--Braç Esquerre-->
+            <rect x="65" y="185" width="40" height="14" fill="darkgray" />
+
+            <!--Braç Dret-->
+            <rect x="195" y="185" width="40" height="14" fill="darkgray" />
+
+            <!--Llumetees-->
+            <!--Vermella-->
+            <circle cx="150" cy="198" r="7" fill="red" />
+
+            <!--Verda-->
+            <circle cx="150" cy="228" r="7" fill="lime" />
+
+            <!--Blava-->
+            <circle cx="150" cy="258" r="7" fill="blue" />
+
+
+          </svg>
+
+          
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>2nd ROUND: Mapa de Bits</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>CASA PIN Y PON 2</h3>
+          <img class="imgBox" src="./img/casapinypon.png" alt="Captura casa (mapa de bits)" />
+        </article>
+
+        <article class="card">
+          <h3>KITT EL COCHE FANTASTICO 2</h3>
+          <img class="imgBox" src="./img/kittelcochefantastico.png" alt="Captura cotxe (mapa de bits)" />
+        </article>
+
+        <article class="card">
+          <h3>WALL-E 2</h3>
+          <img class="imgBox" src="./img/wall-e.png" alt="Captura robot (mapa de bits)" />
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>3r ROUND: Diferències</h2>
+      <p>
+        Les imatges SVG estan definides mitjançant formes i coordenades,
+        cosa que permet modificar fàcilment la mida, la posició o el color dels elements directament des del codi.
+        Un dels avantatges principals és que es poden ampliar o reduir sense perdre qualitat, ja que no depenen de píxels sinó de càlculs matemàtics.
+      </p>
+
+      <p>
+        En canvi, les imatges de mapa de bits estan formades per píxels i tenen una mida fixa. 
+        Quan s’amplien massa, poden perdre nitidesa i aparèixer pixelades.
+        A diferència de les imatges SVG, les imatges de mapa de bits no es poden editar fàcilment mitjançant codi; 
+        qualsevol modificació requereix l’ús d’un programa d’edició d’imatges.
+      </p>
+
+      <h3>Conclusió</h3>
+
+      <p>
+        Tot i que visualment els resultats són semblants, l’ús d’SVG és més flexible i adaptable, 
+        mentre que el mapa de bits és més limitat però senzill d’utilitzar quan la imatge ja està acabada.
+      </p>
+
+      <p>
+        Realment, a primera vista ja es veu una diferència de qualitat entre ambdós tipus d’imatges. 
+        Al ampliar la pàgina a 175% es pot observar clarament com les imatges SVG mantenen la seva qualitat,
+        mentre que les imatges de mapa de bits es veuen pixelades i borroses.
+        Amb el cotxe, per exemple, es veu clarament la separació entre un rect(cos) i rec (sostre). Al SVG no s'aprecia fàcilment.
+        A la casa, el pom de la porta es veu molt pixelat, no queda rodonet com amb SVG.
+        I amb el robot, els ulls i l'antena es veuen molt millor definits en SVG que en mapa de bits.
+      </p>
+
+      <p>
+        Crec que SGV es una mica complicat al principi, pero desprès d'agafar-li el truc es pot fer qualsevol cosa.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    <p>Made By Sana - &copy; 2026</p>
+  </footer>
+</body>
+</html>
